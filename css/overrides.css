@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-unit-moon-exploration .hero-image {
+    background-image: url(/images/luna_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    /* height: 100%; */
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+}
+
+.hero-unit-frontier .hero-image {
+    background-image: url(/images/final-frontier_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute; 
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+}
+
+.hero-unit-moon-exploration {
+    width: 50%;
+    height: 100vh;
+    float: right;
+}
+
+.hero-unit-frontier {
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+.hero-copy {
+    position: relative;
+    text-align: center;
+}
+
+.hero-unit-moon-exploration .hero-copy {
+    width: 50%;
+}
+
+.hero-unit-frontier a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.timeline {
+        content: "";
+        clear: both;
+}
+
+@media screen and (max-width: 500px) {
+    .hero {
+      width: 100%;
+    }
+    .hero-unit-moon-exploration .hero-image {
+        background-position: center center;
+    }
+}
+
+
+/* @media screen and (min-width: 992px) {
+.timeline-2 {
+        float: right;
+    }
+
+    .timeline-
+    
+    /* .timeline-4 {
+        order: 5;
+    }
+    
+    .timeline-6 {
+        order: 6;
+    } */
+
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+    }
+}
+
+@supports (display: grid) {
+    .gallery {
+        float: right;
+    }
+}
